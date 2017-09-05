@@ -27,9 +27,9 @@ class Stack {
 
 
   // isEmpty()
-  //   return true if the queue is empty, false otherwise
+  //   return true if the stack is empty, false otherwise
 
-  
+
 }
 
 module.exports = Stack;
