@@ -25,7 +25,7 @@ npm test ./test/queue.test.js
 ```
 
 
-[Solutions branch]()
+[Solutions branch](https://github.com/gSchool/sea-stacks-and-queues/tree/solutions)
 
 ### Stretch Goals
 
