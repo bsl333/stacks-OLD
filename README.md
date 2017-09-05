@@ -26,3 +26,15 @@ npm test ./test/queue.test.js
 
 
 [Solutions branch]()
+
+### Stretch Goals
+
+For both stacks and queues, add a MAX_SIZE so that no other items can be added
+if a stack/queue has reached MAX_SIZE
+
+Create a method named `isFull()` that returns true if the stack/queue has reached
+MAX_SIZE
+
+If a stack/queue is full, any attempts to add to it should return a null/undefined.
+
+Create tests for your new function
