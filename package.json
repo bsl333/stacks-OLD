@@ -1,0 +1,27 @@
+{
+  "name": "sea-stacks-and-queues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gSchool/sea-stacks-and-queues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gSchool/sea-stacks-and-queues/issues"
+  },
+  "homepage": "https://github.com/gSchool/sea-stacks-and-queues#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
+  }
+}
