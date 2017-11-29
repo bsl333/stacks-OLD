@@ -9,7 +9,7 @@ describe('stack', function(){
 
   describe('length', function(){
     it('should return the size of the stack', function(){
-      expect(stack.length()).to.equal(0)
+      expect(stack.length).to.equal(0)
     })
   })
 
@@ -21,7 +21,7 @@ describe('stack', function(){
 
     it('should push items in the stack', function(){
       stack.push(1).push(2).push(3).push(4)
-      expect(stack.length()).to.equal(4);
+      expect(stack.length).to.equal(4);
     })
   })
 
@@ -35,14 +35,14 @@ describe('stack', function(){
       expect(stack.pop()).to.equal(1);
     });
 
-    it('should return undefined if the stack is empty', function(){
+    it('should return null if the stack is empty', function(){
       stack.push(1).push(2).push(3).push(4);
 
       expect(stack.pop()).to.equal(4);
       expect(stack.pop()).to.equal(3);
       expect(stack.pop()).to.equal(2);
       expect(stack.pop()).to.equal(1);
-      expect(stack.pop()).to.equal(undefined);
+      expect(stack.pop()).to.equal(null);
 
     })
   })
@@ -59,14 +59,14 @@ describe('stack', function(){
       expect(stack.peek()).to.equal(1);
     })
 
-    it('should return undefined if the stack is empty', function(){
-      expect(stack.peek()).to.equal(undefined)
+    it('should return null if the stack is empty', function(){
+      expect(stack.peek()).to.equal(null)
       stack.push(1).push(2).push(3).push(4);
       stack.pop()
       stack.pop()
       stack.pop()
       stack.pop()
-      expect(stack.peek()).to.equal(undefined)
+      expect(stack.peek()).to.equal(null)
     })
   })
 
