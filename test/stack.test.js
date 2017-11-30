@@ -7,12 +7,6 @@ describe('stack', function(){
     stack = new Stack();
   })
 
-  describe('length', function(){
-    it('should return the size of the stack', function(){
-      expect(stack.length).to.equal(0)
-    })
-  })
-
   describe('push',function(){
     it('should return self for chaining', function(){
       let self = stack.push(1)
