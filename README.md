@@ -1,6 +1,4 @@
-# sea-stacks-and-queues
-
-# sea-linked-lists
+# stacks
 
 ```
 npm install
