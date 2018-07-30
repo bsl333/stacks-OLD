@@ -16,7 +16,16 @@ class Stack {
   //   takes a value to store in the stack
   //   returns a reference to self for chaining
   push(val){
+    const newNode = new Node(val)
+    if (!this.head) {
+      this.head = newNode
+    }
 
+    newNode.next = this.head
+    this.head = newNode
+
+    this.length++
+    return this
   }
 
   // pop()
@@ -24,7 +33,17 @@ class Stack {
   //   of the stack
   //   if stack is empty, return null
   pop(){
+    let currentNode = this.head
+    if (!this.length) {
+      return null
+    }
 
+    const value = this.head.val
+    this.head = this.head.next
+
+    this.length--
+    return value
+    
   }
 
   // peek()
@@ -33,13 +52,16 @@ class Stack {
   //   does not change the stack
   //   if the stack is empty, return null
   peek(){
-
+    if (this.length === 0) {
+      return null
+    }
+    return this.head.val
   }
 
   // isEmpty()
   //   return true if the queue is empty, false otherwise
   isEmpty(){
-    
+    return this.length === 0
   }
 }
 
